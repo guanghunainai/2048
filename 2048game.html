@@ -3,87 +3,100 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<title>2048</title>
-	<style>
+	<script src="assist.js"> </script>
+	<style type="text/css">
 	body{
 		margin:0px;
 	}
-	div#total{
+	.total{
 		width:1500px;
 		height:750px;
+		background-color:palegreen;
+		
 	}
-	div#heading{
+	.heading{
 		width:100%;
 		height:10%;
-		background-color:HotPink;
 		
 	}
-	div#content1{
-		width:35%;
-		height:45%;
-		background-color:LavenderBlush ;
-		float:left;
-	}
-	div#content2{
-		width:20%;
-		height:45%;
-		background-color:LemonChiffon;
-		float:left;
-	}
-	div#content3{
-		width:45%;
-		height:45%;
-		background-color:Ivory ;
-		float:left;
-	}
-	div#footing{
+	.content{
 		width:100%;
-		height:90%;
-		background-color:LightCyan;
+		height:60%;
 	}
-	td{
-		width:60px;
-		height:60px;
-		color:Pink;
-		}
+	.footing{
+		width:100%;
+		height:30%;
+	}
+	div#zuo{
+		width:30%;
+		height:100%;
+		float:left;
+	}
+	div#zhong{
+		width:30%;
+		height:100%;
+		float:left;
+		border:5px solid #FFFACD;
+		border-radius:25px 
+	}
+	div#you{
+		width:40%;
+		height:100%;
+		float:left;
+	}
+	.content2{
+		width:100%;
+		height:25%;
+		float:left;
+	}
+	.content3{
+		width:96px;
+		height:96px;
+		float:left;
+		border:8px outset #FFFACD;
+		border-radius:10px;
 		
+	}
+	.size{
+		width:96px;
+		height:96px;
+	}	
 	</style>
 </head>
 <body>
-	<div id="total">
-	<div id="heading">上</div>
-	<div id="content1">中zuo</div>
-	<div id="content2">
-		<table border="1">
-		<tr width=360px height=60px></tr>
-		<tr width=360px height=60px></tr>
-		<tr>
-		  <td>4</td>
-		  <td>3</td>
-		  <td>2</td>
-		  <td>1</td>
-		</tr>
-		<tr>
-		  <td>4</td>
-		  <td>3</td>
-		  <td>2</td>
-		  <td>1</td>
-		</tr>
-		<tr>
-		  <td>4</td>
-		  <td>3</td>
-		  <td>2</td>
-		  <td>1</td>
-		</tr>
-		<tr>
-		  <td>4</td>
-		  <td>3</td>
-		  <td>2</td>
-		  <td>1</td>
-		</tr>
-		</table> 
+  <div class="total">
+	<div class="heading"></div>
+	<div class="content">
+	  <div id="zuo"></div>
+	  <div id="zhong" onclick="e">
+		<div class="content2">
+			<div class="content3"><img class="size" src="image/2.jpg" value="2"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
 	</div>
-	<div id="content3">中you</div>	
-	<div id="footing">下</div>
+		<div class="content2">
+			<div class="content3"><img class="size" src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+		</div>
+		<div class="content2">
+			<div class="content3"><img class="size" src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+		</div>
+		<div class="content2">
+			<div class="content3"><img class="size" src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
+			<div class="content3"><img class="size"src="image/0.jpg" value="0"></div>
 	</div>
+	  </div>
+	  <div id="you"></div>
+	</div>	
+	<div class="footing"></div>
+  </div>
 </body>
 </html>
